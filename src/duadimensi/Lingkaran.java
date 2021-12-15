@@ -1,8 +1,8 @@
 package duadimensi;
 
 public class Lingkaran {
-    Double jari;
-    Double phi = 3.14;
+    protected Double jari;
+    final Double phi = 3.14;
 
     public Lingkaran(Double jari) {
         this.jari = jari;
