@@ -3,7 +3,7 @@ import duadimensi.Persegi;
 
 public class Kubus extends Persegi{
     
-    Kubus(Double sisi){
+    public Kubus(Double sisi){
         super(sisi);
     }
 

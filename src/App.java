@@ -7,32 +7,36 @@ import duadimensi.Persegi;
 import duadimensi.Trapesium;
 import tigadimensi.Balok;
 import tigadimensi.Kerucut;
+import tigadimensi.Kubus;
+import tigadimensi.Limas;
 import tigadimensi.PrismaSegitiga;
 import tigadimensi.Tabung;
 public class App {
     public static void main(String[] args) throws Exception {
-    // Persegi pertama = new Persegi(10.0);
-    // System.out.println("Luasnya adalah: "+ pertama.luas()); 
-    // Lingkaran kedua = new Lingkaran(2.5);
-    // System.out.println(kedua.luas()); 
 
-    // JajarGenjang rumus1 = new JajarGenjang(5.0, 5.0);
-    // System.out.println(rumus1.Luas());
+        // Menghitung luas matematika dua dimensi
+        BelahKetupat belahketupat = new BelahKetupat(5.0, 2.0);
+        System.out.println(belahketupat.luas());
 
-    // BelahKetupat rumus2 = new BelahKetupat(10.0, 5.0);
-    // // System.out.println(rumus2.luas());
-    // Trapesium rumus3 = new Trapesium(2.0, 3.0, 4.0);
-    // System.out.println(rumus3.luas());
-    // System.out.println(pertama.luas());
+        JajarGenjang jajargenjang = new JajarGenjang(7.0, 10.0);
+        System.out.println(jajargenjang.Luas());
 
-    // Kerucut rumus4 = new Kerucut(2.0, 2.0);
-    // System.out.println(rumus4.volume());
+        Trapesium trapesium = new Trapesium(5.0, 2.0, 7.0);
+        System.out.println(trapesium.luas());
 
-    PrismaSegitiga rumus5 = new PrismaSegitiga(2.0, 2.0, 2.0);
-    System.out.println(rumus5.volume());
+        // Menghitung volume matematika tiga dimensi
+        Balok balok = new Balok(5.0, 2.0, 5.0);
+        System.out.println(balok.volume());
 
-    // Balok rumus5 = new Balok(2.0, 2.0, 2.0);
-    // System.out.println(rumus5.volume());
+        Kerucut kerucut = new Kerucut(5.0, 10.0);
+        System.out.println(kerucut.volume());
+
+        Limas limas = new Limas(10.0, 10.0);
+        System.out.println(limas.volume());
+
+        PrismaSegitiga prisma = new PrismaSegitiga(2.0, 10.0, 15.0);
+        System.out.println(prisma.volume());
+
 }
     
 }
